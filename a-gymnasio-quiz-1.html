@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz – Κεφάλαιο 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 30px; background: #fff; }
+    .question { margin-bottom: 20px; }
+    button { padding: 10px 20px; background: #1976d2; color: white; border: none; border-radius: 5px; }
+    .result { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🧠 Quiz – Κεφάλαιο 1: Φυσικοί Αριθμοί</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. Ποιος είναι ο μικρότερος φυσικός αριθμός;</p>
+      <input type="radio" name="q1" value="a"> 1<br>
+      <input type="radio" name="q1" value="b"> 0<br>
+      <input type="radio" name="q1" value="c"> -1<br>
+    </div>
+    <div class="question">
+      <p>2. Ποιος αριθμός είναι κοντινότερος στο 100;</p>
+      <input type="radio" name="q2" value="a"> 89<br>
+      <input type="radio" name="q2" value="b"> 97<br>
+      <input type="radio" name="q2" value="c"> 105<br>
+    </div>
+    <div class="question">
+      <p>3. Ποια είναι η σωστή σειρά: 19, 8, 25, 3;</p>
+      <input type="radio" name="q3" value="a"> 3, 8, 19, 25<br>
+      <input type="radio" name="q3" value="b"> 25, 19, 8, 3<br>
+      <input type="radio" name="q3" value="c"> 8, 3, 19, 25<br>
+    </div>
+    <button type="button" onclick="checkQuiz()">Έλεγχος</button>
+    <p class="result" id="result"></p>
+  </form>
+  <script>
+    function checkQuiz() {
+      const answers = { q1: "b", q2: "b", q3: "a" };
+      let score = 0;
+      for (let q in answers) {
+        const selected = document.querySelector('input[name="' + q + '"]:checked');
+        if (selected && selected.value === answers[q]) score++;
+      }
+      document.getElementById("result").innerText = "Σωστές απαντήσεις: " + score + " στις 3";
+    }
+  </script>
+</body>
+</html>
