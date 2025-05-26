@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Θεωρία – Φυσικοί Αριθμοί</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
     body {
       font-family: Georgia, serif;
@@ -28,11 +29,18 @@
       border-left: 5px solid #8e24aa;
       margin: 20px 0;
     }
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: 1px solid #ccc;
+    .geogebra-button {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #2196f3;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
       margin-top: 20px;
+    }
+    .geogebra-button:hover {
+      background-color: #0d8ae8;
     }
   </style>
 </head>
@@ -53,10 +61,11 @@
     <li>\( 10^4 = 10 \cdot 10 \cdot 10 \cdot 10 = 10000 \)</li>
   </ul>
 
-  <h2>📐 Διαδραστική Εφαρμογή – Αριθμογραμμή</h2>
-  <p>Χρησιμοποιήστε την παρακάτω εφαρμογή για να εξερευνήσετε τη διάταξη φυσικών αριθμών:</p>
-
-  <iframe scrolling="no" title="Number Line" src="https://www.geogebra.org/material/iframe/id/bzksw9ft/width/800/height/500/border/888888/rc/false/ai/true" allowfullscreen></iframe>
+  <h2>📐 Αριθμογραμμή (GeoGebra)</h2>
+  <p>Για να εξερευνήσεις τη διάταξη των φυσικών αριθμών στην αριθμογραμμή, πάτα το παρακάτω κουμπί:</p>
+  <a class="geogebra-button" href="https://www.geogebra.org/m/bzksw9ft" target="_blank">
+    🔗 Άνοιξε Αριθμογραμμή στο GeoGebra
+  </a>
 
 </body>
 </html>
