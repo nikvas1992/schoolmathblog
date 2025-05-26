@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Φυσικοί Αριθμοί</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fffdf0;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 { color: #004aad; }
+    .question { margin-bottom: 20px; }
+    button {
+      padding: 10px 20px;
+      background: #008cba;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result { font-weight: bold; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Quiz: Οι Φυσικοί Αριθμοί – Κεφάλαιο 1</h1>
+
+  <div class="question">
+    <p>1. Ποιος είναι ο μικρότερος φυσικός αριθμός;</p>
+    <input type="radio" name="q1" value="a"> 1<br>
+    <input type="radio" name="q1" value="b"> 0<br>
+    <input type="radio" name="q1" value="c"> -1<br>
+  </div>
+
+  <div class="question">
+    <p>2. Ποιο από τα παρακάτω είναι περιττός αριθμός;</p>
+    <input type="radio" name="q2" value="a"> 14<br>
+    <input type="radio" name="q2" value="b"> 20<br>
+    <input type="radio" name="q2" value="c"> 17<br>
+  </div>
+
+  <div class="question">
+    <p>3. Ποιο είναι το αποτέλεσμα της στρογγυλοποίησης του 349 στην πλησιέστερη εκατοντάδα;</p>
+    <input type="radio" name="q3" value="a"> 300<br>
+    <input type="radio" name="q3" value="b"> 350<br>
+    <input type="radio" name="q3" value="c"> 400<br>
+  </div>
+
+  <button onclick="checkQuiz()">Έλεγχος Απαντήσεων</button>
+  <p class="result" id="result"></p>
+
+  <script>
+    function checkQuiz() {
+      const answers = {
+        q1: 'b',
+        q2: 'c',
+        q3: 'a'
+      };
+      let score = 0;
+      for (let q in answers) {
+        const selected = document.querySelector('input[name="' + q + '"]:checked');
+        if (selected && selected.value === answers[q]) score++;
+      }
+      document.getElementById('result').innerText = "Σωστές απαντήσεις: " + score + " στις 3";
+    }
+  </script>
+</body>
+</html>
