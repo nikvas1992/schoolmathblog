@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Φυσικοί Αριθμοί (20 Ερωτήσεις)</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f7faff;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      color: #004aad;
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 25px;
+    }
+    button {
+      padding: 12px 24px;
+      background: #008cba;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .result {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz Κεφαλαίου 1 – Φυσικοί Αριθμοί</h1>
+  <form id="quizForm">
+<div class="question"><p>1. Ποιος είναι ο μικρότερος φυσικός αριθμός;</p>
+<input type="radio" name="q1" value="a"> 1<br>
+<input type="radio" name="q1" value="b"> 0<br>
+<input type="radio" name="q1" value="c"> -1<br>
+</div>
+<div class="question"><p>2. Ποιος από τους παρακάτω αριθμούς είναι άρτιος;</p>
+<input type="radio" name="q2" value="a"> 37<br>
+<input type="radio" name="q2" value="b"> 124<br>
+<input type="radio" name="q2" value="c"> 311<br>
+</div>
+<div class="question"><p>3. Ποιος από τους παρακάτω αριθμούς είναι σύνθετος;</p>
+<input type="radio" name="q3" value="a"> 7<br>
+<input type="radio" name="q3" value="b"> 11<br>
+<input type="radio" name="q3" value="c"> 15<br>
+</div>
+<div class="question"><p>4. Ποιο είναι το αποτέλεσμα της στρογγυλοποίησης του 498 στην πλησιέστερη εκατοντάδα;</p>
+<input type="radio" name="q4" value="a"> 400<br>
+<input type="radio" name="q4" value="b"> 500<br>
+<input type="radio" name="q4" value="c"> 600<br>
+</div>
+<div class="question"><p>5. Ποια είναι η σωστή ισότητα για την ευκλείδεια διαίρεση 23 : 5;</p>
+<input type="radio" name="q5" value="a"> 23 = 4·5 + 3<br>
+<input type="radio" name="q5" value="b"> 23 = 5·5 - 2<br>
+<input type="radio" name="q5" value="c"> 23 = 5·4 + 1<br>
+</div>
+<div class="question"><p>6. Ποιος είναι ο ΕΚΠ των αριθμών 6 και 8;</p>
+<input type="radio" name="q6" value="a"> 12<br>
+<input type="radio" name="q6" value="b"> 18<br>
+<input type="radio" name="q6" value="c"> 24<br>
+</div>
+<div class="question"><p>7. Ποιος είναι ο ΜΚΔ των 36 και 60;</p>
+<input type="radio" name="q7" value="a"> 6<br>
+<input type="radio" name="q7" value="b"> 12<br>
+<input type="radio" name="q7" value="c"> 18<br>
+</div>
+<div class="question"><p>8. Ποια πρόταση είναι λάθος;</p>
+<input type="radio" name="q8" value="a"> 2 είναι πρώτος<br>
+<input type="radio" name="q8" value="b"> 1 είναι πρώτος<br>
+<input type="radio" name="q8" value="c"> 13 είναι πρώτος<br>
+</div>
+<div class="question"><p>9. Αν ένας αριθμός διαιρείται με το 10, τότε διαιρείται σίγουρα και με:</p>
+<input type="radio" name="q9" value="a"> 2 και 5<br>
+<input type="radio" name="q9" value="b"> 3 και 9<br>
+<input type="radio" name="q9" value="c"> 7 και 11<br>
+</div>
+<div class="question"><p>10. Αν το ψηφίο των μονάδων είναι 0, ο αριθμός:</p>
+<input type="radio" name="q10" value="a"> διαιρείται με 2<br>
+<input type="radio" name="q10" value="b"> διαιρείται με 5 και 10<br>
+<input type="radio" name="q10" value="c"> είναι πρώτος<br>
+</div>
+<div class="question"><p>11. Ο αριθμός 81 διαιρείται με:</p>
+<input type="radio" name="q11" value="a"> 2<br>
+<input type="radio" name="q11" value="b"> 3<br>
+<input type="radio" name="q11" value="c"> 5<br>
+</div>
+<div class="question"><p>12. Ποιο είναι το γινόμενο πρώτων παραγόντων του 36;</p>
+<input type="radio" name="q12" value="a"> 2·2·3·3<br>
+<input type="radio" name="q12" value="b"> 2·3·6<br>
+<input type="radio" name="q12" value="c"> 4·9<br>
+</div>
+<div class="question"><p>13. Αν α = 24 και β = 18, ποιο είναι το ΕΚΠ(α, β);</p>
+<input type="radio" name="q13" value="a"> 72<br>
+<input type="radio" name="q13" value="b"> 36<br>
+<input type="radio" name="q13" value="c"> 12<br>
+</div>
+<div class="question"><p>14. Πόσοι φυσικοί αριθμοί υπάρχουν από το 21 ως το 30;</p>
+<input type="radio" name="q14" value="a"> 9<br>
+<input type="radio" name="q14" value="b"> 10<br>
+<input type="radio" name="q14" value="c"> 8<br>
+</div>
+<div class="question"><p>15. Η τιμή της παράστασης 5 + 3·2 είναι:</p>
+<input type="radio" name="q15" value="a"> 16<br>
+<input type="radio" name="q15" value="b"> 11<br>
+<input type="radio" name="q15" value="c"> 10<br>
+</div>
+<div class="question"><p>16. Ποια είναι η αντιμεταθετική ιδιότητα της πρόσθεσης;</p>
+<input type="radio" name="q16" value="a"> α + β = β + α<br>
+<input type="radio" name="q16" value="b"> α(β + γ) = αβ + αγ<br>
+<input type="radio" name="q16" value="c"> α - β = β - α<br>
+</div>
+<div class="question"><p>17. Αν 10^3 = 1000, τότε 2·10^3 =</p>
+<input type="radio" name="q17" value="a"> 200<br>
+<input type="radio" name="q17" value="b"> 2000<br>
+<input type="radio" name="q17" value="c"> 3000<br>
+</div>
+<div class="question"><p>18. Ο αριθμός 349 στρογγυλοποιημένος στις δεκάδες είναι:</p>
+<input type="radio" name="q18" value="a"> 340<br>
+<input type="radio" name="q18" value="b"> 350<br>
+<input type="radio" name="q18" value="c"> 300<br>
+</div>
+<div class="question"><p>19. Το πλήθος φυσικών αριθμών από το 0 ως το 100 είναι:</p>
+<input type="radio" name="q19" value="a"> 100<br>
+<input type="radio" name="q19" value="b"> 101<br>
+<input type="radio" name="q19" value="c"> 99<br>
+</div>
+<div class="question"><p>20. Ποιοι είναι πρώτοι αριθμοί;</p>
+<input type="radio" name="q20" value="a"> 11 και 21<br>
+<input type="radio" name="q20" value="b"> 13 και 17<br>
+<input type="radio" name="q20" value="c"> 15 και 25<br>
+</div>
+
+  <button type="button" onclick="checkAnswers()">Έλεγχος Απαντήσεων</button>
+  <p class="result" id="result"></p>
+  </form>
+
+  <script>
+    function checkAnswers() {
+      const answers = {
+"q1": "b",
+"q2": "b",
+"q3": "c",
+"q4": "b",
+"q5": "a",
+"q6": "a",
+"q7": "b",
+"q8": "b",
+"q9": "a",
+"q10": "b",
+"q11": "b",
+"q12": "a",
+"q13": "a",
+"q14": "a",
+"q15": "b",
+"q16": "a",
+"q17": "b",
+"q18": "b",
+"q19": "b",
+"q20": "b",
+};
+      let score = 0;
+      for (let q in answers) {
+        const selected = document.querySelector('input[name="' + q + '"]:checked');
+        if (selected && selected.value === answers[q]) score++;
+      }
+      document.getElementById('result').innerText = "Σωστές απαντήσεις: " + score + " στις 20";
+    }
+  </script>
+</body>
+</html>
