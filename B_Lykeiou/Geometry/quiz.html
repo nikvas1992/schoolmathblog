@@ -1,1 +1,45 @@
-<html><head><title>Quiz</title></head><body><h1>B Lykeiou - Geometry</h1><p>Περιεχόμενο: Quiz</p></body></html>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz – Geometry</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header>
+  <h1>B Lykeiou</h1>
+  <nav>
+    <a href="/index.html">Αρχική</a>
+  </nav>
+</header>
+<main>
+  <h2>Quiz</h2>
+  <form id="quiz-form">
+    <p>1. Ποιος είναι ο μικρότερος φυσικός αριθμός;</p>
+    <label><input type="radio" name="q1" value="0"> 0</label><br>
+    <label><input type="radio" name="q1" value="1"> 1</label><br>
+    <label><input type="radio" name="q1" value="-1"> -1</label><br>
+    <button type="button" onclick="submitQuiz()">Υποβολή</button>
+    <p id="result"></p>
+  </form>
+</main>
+<script>
+function submitQuiz() {
+  const answer = document.querySelector('input[name="q1"]:checked');
+  const result = document.getElementById("result");
+  if (!answer) {
+    result.textContent = "📌 Επίλεξε μία απάντηση.";
+    result.style.color = "orange";
+    return;
+  }
+  if (answer.value === "0") {
+    result.textContent = "✅ Σωστό!";
+    result.style.color = "lightgreen";
+  } else {
+    result.textContent = "❌ Λάθος!";
+    result.style.color = "red";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #1a1a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #222;
+  border-bottom: 3px solid #ccc;
+}
+h1 {
+  margin: 0;
+  font-size: 64px;
+  color: #fff;
+}
+nav a {
+  color: #ffee58;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+main.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.card {
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card li {
+  margin: 0.5rem 0;
+}
+.card a {
+  color: #66ccff;
+  text-decoration: none;
+}
+.card a:hover {
+  color: #ffcc66;
+}
