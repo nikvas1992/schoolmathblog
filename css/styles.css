@@ -1,34 +1,42 @@
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f0f8ff;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../img/chalkboard.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #f0f0f0;
 }
+
 header {
-    background-color: #0077cc;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 3px solid #ccc;
 }
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background-color: #e0f0ff;
-    padding: 1rem;
+  margin-top: 10px;
 }
+
 nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #0077cc;
-    background-color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin: 0 15px;
+  color: #ffee58;
+  text-decoration: none;
+  font-weight: bold;
 }
-section {
-    text-align: center;
-    padding: 2rem;
+
+nav a:hover {
+  color: #fff176;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
 }
