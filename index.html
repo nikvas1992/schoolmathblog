@@ -1,165 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <meta charset="UTF-8">
-  <title>MathPath – Μαθηματικά για Όλες τις Τάξεις</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: url('https://cdn.pixabay.com/photo/2020/05/27/07/38/mathematics-5220667_1280.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #2c3e50;
-    }
-    header {
-      background-color: rgba(46, 59, 78, 0.85);
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    }
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-    .card {
-      background: rgba(255, 255, 255, 0.92);
-      border-radius: 10px;
-      margin-bottom: 25px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: translateX(6px);
-    }
-    .card h2 {
-      margin-top: 0;
-      color: #006699;
-    }
-    .card ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    .card li {
-      margin: 8px 0;
-    }
-    .card a {
-      display: inline-block;
-      background-color: #006699;
-      color: white;
-      padding: 6px 14px;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    .card a:hover {
-      background-color: #004466;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Math Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-
-  <header>
-    <h1>📘 MathPath – Μαθηματικά Γυμνασίου & Λυκείου</h1>
-  </header>
-
-  <div class="container">
-
-    <div class="card" style="border-left: 6px solid #2196f3;">
-      <h2>Α' Γυμνασίου</h2>
-      <ul>
-        <li><a href="a-gymnasio-theory-1.html">📘 Θεωρία</a></li>
-        <li><a href="a-gymnasio-exercises-1.html">📝 Ασκήσεις</a></li>
-        <li><a href="a-gymnasio-quiz-1.html">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #42a5f5;">
-      <h2>Β' Γυμνασίου</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #64b5f6;">
-      <h2>Γ' Γυμνασίου</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #ba68c8;">
-      <h2>Α' Λυκείου – Άλγεβρα</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #ab47bc;">
-      <h2>Α' Λυκείου – Γεωμετρία</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #26a69a;">
-      <h2>Β' Λυκείου – Άλγεβρα</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #00897b;">
-      <h2>Β' Λυκείου – Προσανατολισμού</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #00796b;">
-      <h2>Β' Λυκείου – Γεωμετρία</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #ff7043;">
-      <h2>Γ' Λυκείου – Μαθηματικά & Στατιστική</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-    <div class="card" style="border-left: 6px solid #f4511e;">
-      <h2>Γ' Λυκείου – Προσανατολισμού</h2>
-      <ul>
-        <li><a href="#">📘 Θεωρία</a></li>
-        <li><a href="#">📝 Ασκήσεις</a></li>
-        <li><a href="#">🧠 Quiz</a></li>
-      </ul>
-    </div>
-
-  </div>
+    <header>
+        <h1>🎓 School Math Blog</h1>
+        <p>Μάθε, Εξασκήσου και Δοκίμασε τις Γνώσεις σου στα Μαθηματικά!</p>
+    </header>
+    <nav>
+        <a href="a-gymnasio/1/theory.html">📘 Θεωρία Κεφ. 1</a>
+        <a href="a-gymnasio/1/exercises.html">📝 Ασκήσεις</a>
+        <a href="a-gymnasio/1/quiz.html">🧠 Quiz</a>
+    </nav>
+    <section>
+        <img src="img/banner.gif" alt="math fun" width="100%">
+    </section>
 </body>
 </html>
